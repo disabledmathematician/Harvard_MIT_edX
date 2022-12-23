@@ -1,0 +1,82 @@
+declarative vs imperative knowledge
+
+int, float, string, set, tuple, list, dictionary, class, object, function, function invocation, function return, combined type, expression
+
++ - * / // ** ( ) != == += -= *= /= //= **= & | ^ ~ << >> &= |= ^= ~= <<= >>= . * ** [ ] [ : ] [ : : ] [i][j][k] __ ; : , = @
+
+assert, global, nonlocal, pass, del
+
+break, continue, is, is not, in, not in
+
+True, False, lambda, yield, from x import y as z
+
+try:
+
+except:
+
+finally:
+
+else:
+
+def main():
+	pass
+
+if __name__ == "__main__": main()
+
+def function(args):
+	body
+	return
+
+for x in range(start, stop, step):
+
+for x in a:
+	for y in b:
+
+for x in a:
+	for y in x:
+
+while(bool):
+	while(bool):
+
+def recursive_funcion(arg_1, arg_2):
+	base case 1:
+		return
+	base case 2:
+	base case 3:
+	base case x:
+	body
+	recursive call
+	
+
+iteration, recursion
+abstraction, decomposition
+
+if
+	if
+		if
+		elif
+		elif
+		else
+	elif
+	elif
+	else
+elif
+elif
+else
+
+
+match(object):
+	case x:
+	case y:
+	case z:
+
+class Fraction(object):
+	def __init__(self, numerator, denominator):
+		pass
+
+Requirements Analysis
+Algorithmic Complexity
+Standard Library
+
+
+
