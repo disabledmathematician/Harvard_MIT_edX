@@ -1,0 +1,137 @@
+Charles Truscott Watters, MIT Python
+
+declarative vs. imperative knowledge
+
+int, float, string, set, tuple, list, dictionary, class, object, function, function invocation, function return
+combined type, expression, operator, operand
+
++ - * / // % ** ( ) != == and, or, not += -= *= /= //= %= **= 
+& | ^ ~ << >> &= |= ^= ~= <<= >>= . * ** [ ] [i:j] [i:j:k] [i][j] [i][j][k]
+: ; __ , = @
+
+True, False, lambda x: x ** 2, lambda x, y: x ** y, yield, from x import y as z
+
+break, continue, is, is not, in, is in
+
+assert, global, nonlocal, pass, del
+
+try:
+	body
+except ValueError:
+	body
+except IOError:
+	body
+finally:
+	body
+else:
+	body
+
+if filename.endswith(".txt") == False: raise ValueError("Must end with .txt, other data formats not supported")
+
+Exception Handling, Exception Handling Classes
+
+for x in range(start, stop - 1, step):
+
+for x in a:
+	for y in x:
+
+for x in a:
+	for y in b:
+
+while(True):
+	body
+while(bool):
+	while(bool):
+		body
+
+def recurse(a, b):
+	base case x:
+	base case y:
+	base case z:
+	body:
+	recurse(a - 1, b - 1)
+	return
+
+recursion, iteration
+
+if (bool):
+	if (bool):
+		if (bool):
+
+		elif (bool):
+		elif (bool):
+		else:
+	elif (bool):
+	elif (bool):
+	else:
+
+elif (bool):
+elif (bool):
+else:
+
+match(case / object):
+	case x:
+		body
+	case y:
+		body
+	case z:
+		body
+
+branching, control flow, conditionals
+
+def function(args):
+	body
+	return
+
+def main():
+	body
+
+if __name__ == "__main__": main()
+
+abstraction, decomposition, function-oriented programming
+
+class Person(object):
+	def __init__(self, name, age, dob):
+		self.name = name
+		self.age = age
+		self.dob = dob
+	def __repr__(self):
+		pass
+	def __iter__(self):
+		pass
+	def __str__(self):
+		pass
+
+encapsulation, inheritance, polymorphism, data and method attributes, generators, decorators
+
+Python Standard Library, Algorithmic Complexity, Algorithms and Data Structures, Sorting and Searching, Requirements Analysis and Software Prototyping
+
+
+Algorithmic Complexity
+
+	- step
+
+	- random access machine
+
+	- time constraint
+
+	- best case, worst case, average case
+		- lower, upper bound
+
+	- O(n), asymptotic notation, upper bound
+
+	- ϴ(n), theta notation, lower bound
+
+	- counting steps, branches, operators, operations, iteration, recursion, variables
+
+	- order of growth in respect of some variable `n`
+
+	constant, linear, logarithmic, log-linear, polynomial (e.g. binomial trinomial quadratic), exponential time
+
+	- additive and multiplicative constants
+
+e.g. prime number discovery algorithm is 5n + n / 2 for ϴ(n) but e^(5n + n / 2) for large n such as O(n)
+
+Thursday 5 January 2023
+
+Charles Truscott
