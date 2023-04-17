@@ -1,0 +1,55 @@
+(base) charles@ubuntubudgie:~$ ipython
+Python 2.7.16 |Anaconda, Inc.| (default, Mar 14 2019, 21:00:58) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.8.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: import matplotlib.pyplot as plt
+
+In [2]: import numpy as np
+
+In [3]: from mpl_toolkits import mplot3d
+
+In [4]: import math
+
+In [5]: def f(x, y):
+   ...:     return x ** 3 / 3 + y ** 3 / 3
+   ...: 
+
+In [6]: x = np.linspace(-10, 10, 200)
+
+In [7]: y = np.linspace(-10, 10, 200)
+
+In [8]: x, y = np.meshgrid(x, y)
+
+In [9]: axes = plt.axes(projection='3d')
+
+In [10]: axes.set_title("Charles Truscott Watters")
+Out[10]: Text(0.5,0.92,'Charles Truscott Watters')
+
+In [11]: axes.set_xlabel('x')
+Out[11]: Text(0.5,0,'x')
+
+In [12]: axes.set_ylabel('y')
+Out[12]: Text(0.5,0,'y')
+
+In [13]: axes.set_zlabel('$x^3 / 3 + y^3 / 3$')
+Out[13]: Text(0.5,0,'$x^3 / 3 + y^3 / 3$')
+
+In [14]: axes.plot_wireframe(x, y, f(x, y), color='black')
+Out[14]: <mpl_toolkits.mplot3d.art3d.Line3DCollection at 0x7f41043fb710>
+
+In [15]: plt.show()
+libGL error: MESA-LOADER: failed to open iris: /usr/lib/dri/iris_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+libGL error: failed to load driver: iris
+libGL error: MESA-LOADER: failed to open iris: /usr/lib/dri/iris_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+libGL error: failed to load driver: iris
+libGL error: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+libGL error: failed to load driver: swrast
+
+In [16]: 
+
